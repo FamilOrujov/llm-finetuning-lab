@@ -21,7 +21,7 @@
 | **Validation Accuracy** | 83.42% |
 | **Macro F1 Score** | 81.57% |
 | **Trainable Parameters** | 24.3M (0.75%) |
-| **Training Time** | ~15 min on T4 GPU |
+| **Training Time** | 2h 50 min on T4 GPU |
 
 ---
 
