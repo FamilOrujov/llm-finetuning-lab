@@ -41,11 +41,11 @@ This is where fine-tuning a modern LLM like Llama 3.2 becomes powerful, we're no
 
 I chose the [Financial Sentiment Analysis](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis)  dataset from Kaggle for several strategic reasons:
 
-1. **Real-World Diversity**: The dataset contains ~5.8K samples spanning earnings calls, financial news, Twitter/X posts, and analyst reports. This diversity is crucial — a model trained only on formal news would fail on casual market commentary like *"$TSLA to the moon 🚀"*.
+1. **Real-World Diversity**: The dataset contains ~5.8K samples spanning earnings calls, financial news, Twitter/X posts, and analyst reports. This diversity is crucial — a model trained only on formal news would fail on casual market commentary like *"$TSLA to the moon"*.
 
 2. **Clean 3-Class Labels**: Positive, Negative, and Neutral. This mirrors how actual financial analysts think. No ambiguous 5-star scales or continuous scores — just clear, actionable classifications.
 
-3. **Challenging Class Imbalance**: With 53.6% Neutral, 31.7% Positive, and only 14.7% Negative samples, the dataset reflects real-world financial text distribution. Most market commentary is factual (neutral). The scarcity of negative samples makes the model work harder to learn bearish signals — exactly the kind of challenge that separates good models from great ones.
+3. **Challenging Class Imbalance**: With 53.6% Neutral, 31.7% Positive, and only 14.7% Negative samples, the dataset reflects real-world financial text distribution. Most market commentary is factual (neutral). The scarcity of negative samples makes the model work harder to learn bearish signals, exactly the kind of challenge that separates good models from great ones.
 
 4. **Appropriate Scale**: At ~5.2K training samples, this dataset is small enough to fine-tune on free Colab GPUs in minutes, yet large enough to achieve meaningful generalization. It's the perfect proving ground for demonstrating efficient fine-tuning techniques.
 
@@ -75,7 +75,7 @@ Choosing the right base model is like choosing the right foundation for a buildi
 |--------|-----------|
 | **Size Sweet Spot** | At 3 billion parameters, it's large enough to understand nuanced financial language but small enough to fine-tune on consumer GPUs. The 8B and 70B variants would require enterprise hardware. |
 | **Instruction-Tuned** | The `-Instruct` variant already understands conversational prompts, reducing the amount of task-specific learning needed. We're teaching it *what* to analyze, not *how* to follow instructions. |
-| **Recent Architecture** | Llama 3.2 (released late 2024) incorporates the latest transformer optimizations — grouped-query attention, RMSNorm, and SwiGLU activations — making it more efficient than older models. |
+| **Recent Architecture** | Llama 3.2 (released late 2024) incorporates the latest transformer optimizations, grouped-query attention, RMSNorm, and SwiGLU activations — making it more efficient than older models. |
 | **Open Weights** | Meta's open license allows commercial use and modification, essential for real-world deployment. |
 
 ### Model & Quantization
@@ -238,7 +238,7 @@ The preprocessing pipeline (`notebooks/dataset_prepare.ipynb`) applies minimal t
 3. **Label Standardization**: Lowercase + capitalize (e.g., "positive" → "Positive")
 4. **Stratified Split**: 90/10 train/val preserving class ratios
 
-I intentionally avoided heavy preprocessing (lemmatization, stopword removal, etc.) because modern LLMs are robust to surface variations. Over-cleaning can actually remove useful signals — the way a word is used (capitalization, punctuation) can carry subtle sentiment cues.
+I intentionally avoided heavy preprocessing (lemmatization, stopword removal, etc.) because modern LLMs are robust to surface variations. Over-cleaning can actually remove useful signals, the way a word is used (capitalization, punctuation) can carry subtle sentiment cues.
 
 ---
 
