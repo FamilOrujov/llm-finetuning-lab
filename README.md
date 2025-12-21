@@ -220,22 +220,5 @@ Contributions are welcome! Here's how you can help:
 
 This repository is licensed under the MIT License. Individual projects may use models with their own licenses (e.g., Llama Community License).
 
----
 
-## 📬 Contact
-
-**Famil Orujov**
-
-- GitHub: [@FamilOrujov](https://github.com/FamilOrujov)
-- Email: familoruj@gmail.com
-
----
-
-<div align="center">
-
-**If this lab helps your learning or research, consider giving it a ⭐**
-
-*New experiments added regularly — watch this repo for updates!*
-
-</div>
 
