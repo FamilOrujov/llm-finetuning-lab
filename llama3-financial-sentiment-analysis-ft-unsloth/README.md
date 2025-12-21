@@ -75,7 +75,7 @@ Choosing the right base model is like choosing the right foundation for a buildi
 |--------|-----------|
 | **Size Sweet Spot** | At 3 billion parameters, it's large enough to understand nuanced financial language but small enough to fine-tune on consumer GPUs. The 8B and 70B variants would require enterprise hardware. |
 | **Instruction-Tuned** | The `-Instruct` variant already understands conversational prompts, reducing the amount of task-specific learning needed. We're teaching it *what* to analyze, not *how* to follow instructions. |
-| **Recent Architecture** | Llama 3.2 (released late 2024) incorporates the latest transformer optimizations, grouped-query attention, RMSNorm, and SwiGLU activations — making it more efficient than older models. |
+| **Recent Architecture** | Llama 3.2 (released late 2024) incorporates the latest transformer optimizations, grouped-query attention, RMSNorm, and SwiGLU activations making it more efficient than older models. |
 | **Open Weights** | Meta's open license allows commercial use and modification, essential for real-world deployment. |
 
 ### Model & Quantization
