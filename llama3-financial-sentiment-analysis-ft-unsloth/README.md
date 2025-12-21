@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦙 Llama 3.2 Financial Sentiment Analysis
+# Llama 3.2 Financial Sentiment Analysis
 
 ### Fine-Tuning with QLoRA + Unsloth
 
@@ -173,11 +173,11 @@ Looking at these charts is like reading the biography of the training run. Each 
 
 The loss trajectory tells a fascinating story:
 
-**Steps 0-100 (The Awakening)**: Loss drops sharply from ~1.45 to ~1.25. This is the model's "aha moment" — it's rapidly learning that financial sentiment is a structured task with three clear outputs. The instruction-tuned base already knows language; it's now learning *this specific* classification task.
+**Steps 0-100 (The Awakening)**: Loss drops sharply from ~1.45 to ~1.25. This is the model's "aha moment" it's rapidly learning that financial sentiment is a structured task with three clear outputs. The instruction-tuned base already knows language; it's now learning *this specific* classification task.
 
-**Steps 100-300 (The Grind)**: Loss continues declining but with noticeable oscillation. This variance isn't noise — it's the model encountering different batch compositions. Some batches are "easy" (clear sentiment), others are "hard" (ambiguous financial jargon). The overall trend remains downward.
+**Steps 100-300 (The Grind)**: Loss continues declining but with noticeable oscillation. This variance isn't noise, it's the model encountering different batch compositions. Some batches are "easy" (clear sentiment), others are "hard" (ambiguous financial jargon). The overall trend remains downward.
 
-**Steps 300-500 (The Plateau Begins)**: Loss stabilizes around 1.15-1.20. The easy gains are captured. Further improvement requires the model to handle edge cases — sarcasm in tweets, domain-specific idioms, mixed-sentiment texts.
+**Steps 300-500 (The Plateau Begins)**: Loss stabilizes around 1.15-1.20. The easy gains are captured. Further improvement requires the model to handle edge cases, sarcasm in tweets, domain-specific idioms, mixed-sentiment texts.
 
 **Steps 500-658 (Diminishing Returns)**: Loss oscillates between 1.10-1.20 with no clear trend. The model has extracted most learnable signal from the data. Continuing further risks fitting to noise rather than patterns.
 
