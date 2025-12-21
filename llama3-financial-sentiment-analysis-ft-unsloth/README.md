@@ -35,15 +35,15 @@ I built this project to explore a fundamental question: **Can we teach a large l
 
 Traditional sentiment analysis tools often fail on financial text. Words like "beat" (earnings beat expectations) or "short" (short selling) carry domain-specific meanings that general-purpose models miss. A headline like *"Company cuts guidance"* requires understanding that "cuts" in this context signals negativity, not just literal cutting.
 
-This is where fine-tuning a modern LLM like Llama 3.2 becomes powerful, we're not just pattern matching; we're teaching the model the *language of finance*.
+This is where fine-tuning a modern LLM like Llama 3.2 becomes powerful, we're not just pattern matching, we're teaching the model the *language of finance*.
 
 ### Why This Dataset?
 
 I chose the [Financial Sentiment Analysis](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis)  dataset from Kaggle for several strategic reasons:
 
-1. **Real-World Diversity**: The dataset contains ~5.8K samples spanning earnings calls, financial news, Twitter/X posts, and analyst reports. This diversity is crucial — a model trained only on formal news would fail on casual market commentary like *"$TSLA to the moon"*.
+1. **Real-World Diversity**: The dataset contains ~5.8K samples spanning earnings calls, financial news, Twitter/X posts, and analyst reports. This diversity is crucial, a model trained only on formal news would fail on casual market commentary like *"$TSLA to the moon"*.
 
-2. **Clean 3-Class Labels**: Positive, Negative, and Neutral. This mirrors how actual financial analysts think. No ambiguous 5-star scales or continuous scores — just clear, actionable classifications.
+2. **Clean 3-Class Labels**: Positive, Negative, and Neutral. This mirrors how actual financial analysts think. No ambiguous 5-star scales or continuous scores, just clear, actionable classifications.
 
 3. **Challenging Class Imbalance**: With 53.6% Neutral, 31.7% Positive, and only 14.7% Negative samples, the dataset reflects real-world financial text distribution. Most market commentary is factual (neutral). The scarcity of negative samples makes the model work harder to learn bearish signals, exactly the kind of challenge that separates good models from great ones.
 
@@ -114,7 +114,7 @@ Choosing the right base model is like choosing the right foundation for a buildi
 > - **Attention rewiring**: Learning which tokens in financial text are sentiment-bearing
 > - **Feature transformation**: Learning how to map financial concepts to sentiment outputs
 > 
-> Training 24.3M parameters (0.75% of the model) is the sweet spot — enough capacity to adapt, not enough to memorize.
+> Training 24.3M parameters (0.75% of the model) is the sweet spot, enough capacity to adapt, not enough to memorize.
 
 ### Training Hyperparameters
 
@@ -223,9 +223,9 @@ The loss trajectory tells a fascinating story:
 > [!NOTE]
 > **Understanding the Class Imbalance**  
 > 
-> The dataset's imbalance (Neutral > Positive > Negative) isn't a bug — it's a feature. Real financial text is predominantly neutral. Most press releases, earnings reports, and analyst notes aim for objectivity. Positive news is more common than negative because companies prefer to highlight wins and downplay losses.
+> The dataset's imbalance (Neutral > Positive > Negative) isn't a bug, it's a feature. Real financial text is predominantly neutral. Most press releases, earnings reports, and analyst notes aim for objectivity. Positive news is more common than negative because companies prefer to highlight wins and downplay losses.
 > 
-> The scarcity of negative samples (14.7%) makes learning bearish signals harder but more valuable. A model that can reliably detect negative sentiment in financial text has genuine utility — it can flag potential risks that humans might miss in the flood of daily financial communications.
+> The scarcity of negative samples (14.7%) makes learning bearish signals harder but more valuable. A model that can reliably detect negative sentiment in financial text has genuine utility, it can flag potential risks that humans might miss in the flood of daily financial communications.
 > 
 > The strong macro F1 score (81.57%) indicates the model handles all three classes well, not just the majority class. This is the metric that matters for real-world deployment.
 
@@ -362,10 +362,3 @@ This project is licensed under the MIT License. The base Llama 3.2 model is subj
 
 ---
 
-<div align="center">
-
-**Built with 🦙 Llama + ⚡ Unsloth**
-
-*If this project helped you, consider giving it a ⭐*
-
-</div>
