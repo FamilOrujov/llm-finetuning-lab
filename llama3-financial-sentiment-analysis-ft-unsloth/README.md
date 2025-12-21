@@ -39,7 +39,7 @@ This is where fine-tuning a modern LLM like Llama 3.2 becomes powerful, we're no
 
 ### Why This Dataset?
 
-I chose the [Financial Sentiment Analysis dataset from Kaggle](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis) for several strategic reasons:
+I chose the [Financial Sentiment Analysis](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis)  dataset from Kaggle for several strategic reasons:
 
 1. **Real-World Diversity**: The dataset contains ~5.8K samples spanning earnings calls, financial news, Twitter/X posts, and analyst reports. This diversity is crucial — a model trained only on formal news would fail on casual market commentary like *"$TSLA to the moon 🚀"*.
 
