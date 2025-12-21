@@ -108,7 +108,7 @@ Choosing the right base model is like choosing the right foundation for a buildi
 > 
 > **Alpha = 16 (α/r = 1)**: The alpha/rank ratio controls how much the LoRA updates influence the frozen weights. A ratio of 1.0 is the "neutral" setting — the adaptations have balanced influence. Higher ratios (α/r = 2) make LoRA more aggressive but can destabilize training.
 > 
-> **Zero Dropout**: Controversial choice? Not really. Traditional dropout prevents overfitting by randomly zeroing activations. But QLoRA already introduces *implicit regularization* through quantization noise — the 4-bit representation naturally adds stochasticity. Adding dropout on top would over-regularize and slow convergence.
+> **Zero Dropout**: Controversial choice? Not really. Traditional dropout prevents overfitting by randomly zeroing activations. But QLoRA already introduces *implicit regularization* through quantization noise the 4-bit representation naturally adds stochasticity. Adding dropout on top would over-regularize and slow convergence.
 > 
 > **All 7 Target Modules**: Many tutorials only target attention layers (q, k, v, o). I chose to also include the MLP layers (gate, up, down) because sentiment classification requires both:
 > - **Attention rewiring**: Learning which tokens in financial text are sentiment-bearing
@@ -188,7 +188,7 @@ The loss trajectory tells a fascinating story:
 > 
 > 1. **Loss Plateau**: The training loss stabilized around 1.10-1.15 with no significant improvement trend visible. Continuing would likely lead to diminishing returns.
 > 
-> 2. **Validation Performance**: At epoch 2 (checkpoint-658), the model achieved **83.42% accuracy** and **81.57% macro F1** — strong results for a 3-class sentiment task on financial text.
+> 2. **Validation Performance**: At epoch 2 (checkpoint-658), the model achieved **83.42% accuracy** and **81.57% macro F1** strong results for a 3-class sentiment task on financial text.
 > 
 > 3. **Overfitting Prevention**: For small datasets (~5.2K samples), extended training often leads to overfitting. The model was already showing signs of memorization with oscillating loss rather than smooth descent. Each additional epoch would increasingly fit training quirks rather than generalizable patterns.
 > 
