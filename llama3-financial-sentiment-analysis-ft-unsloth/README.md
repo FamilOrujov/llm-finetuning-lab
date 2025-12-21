@@ -106,7 +106,7 @@ Choosing the right base model is like choosing the right foundation for a buildi
 > 
 > **Rank = 16**: Think of LoRA rank as the "expressiveness budget" for adaptation. Rank 4-8 works for simple tasks like style transfer. Rank 16-32 is ideal for semantic tasks like sentiment where the model needs to rewire how it interprets meaning. Higher ranks (64+) offer diminishing returns and risk overfitting on small datasets.
 > 
-> **Alpha = 16 (α/r = 1)**: The alpha/rank ratio controls how much the LoRA updates influence the frozen weights. A ratio of 1.0 is the "neutral" setting — the adaptations have balanced influence. Higher ratios (α/r = 2) make LoRA more aggressive but can destabilize training.
+> **Alpha = 16 (α/r = 1)**: The alpha/rank ratio controls how much the LoRA updates influence the frozen weights. A ratio of 1.0 is the "neutral" setting the adaptations have balanced influence. Higher ratios (α/r = 2) make LoRA more aggressive but can destabilize training.
 > 
 > **Zero Dropout**: Controversial choice? Not really. Traditional dropout prevents overfitting by randomly zeroing activations. But QLoRA already introduces *implicit regularization* through quantization noise the 4-bit representation naturally adds stochasticity. Adding dropout on top would over-regularize and slow convergence.
 > 
