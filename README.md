@@ -16,13 +16,13 @@
 
 ## 🎯 What Is This Repository?
 
-This repository is a **living laboratory** for LLM fine-tuning experiments. Each folder contains a complete, self-contained project that fine-tunes a large language model for a specific task — from sentiment analysis to code generation, from summarization to domain-specific assistants.
+This repository is a **living laboratory** for LLM fine-tuning experiments. Each folder contains a complete, self-contained project that fine-tunes a large language model for a specific task from sentiment analysis to code generation, from summarization to domain-specific assistants.
 
 ### Philosophy
 
 - **Learn by Doing**: Every project includes full training code, datasets, and detailed documentation
 - **Reproducibility First**: All experiments can be replicated on free-tier GPUs (Google Colab T4)
-- **Production-Ready**: Not just experiments — these are deployable models with real-world utility
+- **Production-Ready**: Not just experiments these are deployable models with real-world utility
 - **Efficient Methods**: Focus on parameter-efficient techniques (LoRA, QLoRA) that democratize LLM training
 
 ---
