@@ -12,7 +12,7 @@
 
 </div>
 
----.
+---
 
 ## 🎯 What Is This Repository?
 
