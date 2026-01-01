@@ -182,9 +182,9 @@ The loss trajectory tells a fascinating story:
 **Steps 500-658 (Diminishing Returns)**: Loss oscillates between 1.10-1.20 with no clear trend. The model has extracted most learnable signal from the data. Continuing further risks fitting to noise rather than patterns.
 
 > [!IMPORTANT]
-> **Why Training Stopped at Epoch 2**  
+> **Why I Stopped Fine-tuning at Epoch 2**  
 > 
-> Training was intentionally stopped after epoch 2. Here's the reasoning:
+> I was intentionally stopped fine-tuning after epoch 2. Here's the reasoning:
 > 
 > 1. **Loss Plateau**: The training loss stabilized around 1.10-1.15 with no significant improvement trend visible. Continuing would likely lead to diminishing returns.
 > 
