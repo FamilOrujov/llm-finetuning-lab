@@ -29,7 +29,7 @@
 
 ### Why Financial Sentiment Analysis?
 
-In the world of quantitative finance and algorithmic trading, **sentiment is signal**. Every day, millions of financial texts, earnings reports, analyst notes, tweets, and news headlines flood the market. Behind each piece of text lies a sentiment that can move markets: bullish optimism, bearish fear, or careful neutrality.
+In the world of quantitative finance and algorithmic trading, **sentiment is signal**. Every day, millions of financial texts, earnings reports, analyst notes, tweets and news headlines flood the market. Behind each piece of text lies a sentiment that can move markets: bullish optimism, bearish fear, or careful neutrality.
 
 I built this project to explore a fundamental question: **Can we teach a large language model to read financial text the way a seasoned analyst would?**
 
