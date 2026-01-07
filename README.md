@@ -33,7 +33,7 @@ Click on any project to explore its full documentation, training notebooks, and 
 
 | Project | Model | Task | Method | Accuracy | Status |
 |:--------|:------|:-----|:-------|:---------|:-------|
-| [🦙 **Llama 3.2 Financial Sentiment**](./llama3-financial-sentiment-analysis-ft-unsloth/) | Llama-3.2-3B-Instruct | Sentiment Classification | QLoRA + Unsloth | 83.42% | ✅ Complete |
+| [**Llama 3.2 Financial Sentiment**](./llama3-financial-sentiment-analysis-ft-unsloth/) | Llama-3.2-3B-Instruct | Sentiment Classification | QLoRA + Unsloth | 83.42% | ✅ Complete |
 
 ---
 
@@ -43,7 +43,7 @@ Click on any project to explore its full documentation, training notebooks, and 
 <tr>
 <td width="50%" valign="top">
 
-### 🦙 Llama 3.2 Financial Sentiment Analysis
+### Llama 3.2 Financial Sentiment Analysis
 
 Fine-tuning Llama 3.2 3B for 3-class financial sentiment classification using QLoRA.
 
