@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 What Is This Repository?
+## What Is This Repository?
 
 This repository is a **living laboratory** for LLM fine-tuning experiments. Each folder contains a complete, self-contained project that fine-tunes a large language model for a specific task from sentiment analysis to code generation, from summarization to domain-specific assistants.
 
@@ -27,7 +27,7 @@ This repository is a **living laboratory** for LLM fine-tuning experiments. Each
 
 ---
 
-## 📂 Fine-Tuning Projects
+## Fine-Tuning Projects
 
 Click on any project to explore its full documentation, training notebooks, and results.
 
@@ -37,7 +37,7 @@ Click on any project to explore its full documentation, training notebooks, and 
 
 ---
 
-## 🚀 Quick Navigation
+## Quick Navigation
 
 <table>
 <tr>
@@ -58,14 +58,14 @@ Fine-tuning Llama 3.2 3B for 3-class financial sentiment classification using QL
 </td>
 <td width="50%" valign="top">
 
-### 🔜 Coming Soon
+### Coming Soon
 
 More fine-tuning projects are in development:
 
-- 🧠 **Code Assistant** — Fine-tuning for Python code generation
-- 📄 **Document Summarizer** — Long-form text summarization
-- 💬 **Customer Support Bot** — Domain-specific conversational AI
-- 🏥 **Medical NER** — Named entity recognition for healthcare
+- **Code Assistant** — Fine-tuning for Python code generation
+- **Document Summarizer** — Long-form text summarization
+- **Customer Support Bot** — Domain-specific conversational AI
+- **Medical NER** — Named entity recognition for healthcare
 
 *Star this repo to stay updated!*
 
@@ -75,7 +75,7 @@ More fine-tuning projects are in development:
 
 ---
 
-## 🧪 Techniques & Methods
+## Techniques & Methods
 
 All projects in this lab utilize modern, efficient fine-tuning techniques:
 
@@ -98,7 +98,7 @@ QLoRA Fine-Tuning (7B model):   ~6 GB VRAM   ✅ Works on T4/RTX 3060
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technologies |
 |:---------|:-------------|
@@ -111,7 +111,7 @@ QLoRA Fine-Tuning (7B model):   ~6 GB VRAM   ✅ Works on T4/RTX 3060
 
 ---
 
-## 📊 Results Overview
+## Results Overview
 
 Aggregate performance across all projects:
 
@@ -123,7 +123,7 @@ Aggregate performance across all projects:
 
 ---
 
-## 🏃 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -165,7 +165,7 @@ Each project includes a Colab notebook — no local setup required:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 llm-finetuning-lab/
@@ -186,7 +186,7 @@ llm-finetuning-lab/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -204,7 +204,7 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 📈 Roadmap
+## Roadmap
 
 - [x] Llama 3.2 Financial Sentiment Analysis
 - [ ] Code generation fine-tuning (StarCoder/CodeLlama)
@@ -216,7 +216,7 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 📝 License
+## License
 
 This repository is licensed under the MIT License. Individual projects may use models with their own licenses (e.g., Llama Community License).
 
