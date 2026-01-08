@@ -14,7 +14,7 @@
 
 ---
 
-## 📊 Results at a Glance
+## Results at a Glance
 
 | Metric | Score |
 |--------|-------|
@@ -25,7 +25,7 @@
 
 ---
 
-## 🧠 The Story Behind This Project
+## The Story Behind This Project
 
 ### Why Financial Sentiment Analysis?
 
@@ -51,7 +51,7 @@ I chose the [Financial Sentiment Analysis](https://www.kaggle.com/datasets/sbhat
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project fine-tunes **Meta's Llama-3.2-3B-Instruct** model for financial sentiment analysis using **QLoRA** (Quantized Low-Rank Adaptation) with the **Unsloth** library for 2x faster training.
 
@@ -65,7 +65,7 @@ Given a financial text (news headline, tweet, or report excerpt), classify the s
 
 ---
 
-## 🔧 Training Configuration
+## Training Configuration
 
 ### Why Llama 3.2 3B?
 
@@ -145,7 +145,7 @@ Choosing the right base model is like choosing the right foundation for a buildi
 
 ---
 
-## 📈 Training Metrics Analysis
+## Training Metrics Analysis
 
 <div align="center">
 
@@ -200,7 +200,7 @@ The loss trajectory tells a fascinating story:
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 **Source:** [Financial Sentiment Analysis](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis) (Kaggle)
 
@@ -242,7 +242,7 @@ I intentionally avoided heavy preprocessing (lemmatization, stopword removal, et
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Run on Google Colab (Recommended)
 
@@ -272,25 +272,25 @@ python src/scripts/evaluate.py --model_path ./outputs/final --data_dir ./data
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 llama3-financial-sentiment-analysis-ft-unsloth/
 │
-├── 📊 data/
+├── data/
 │   ├── data.csv                    # Raw dataset (5,842 samples)
 │   ├── train_dataset.jsonl         # Processed training data
 │   └── val_dataset.jsonl           # Processed validation data
 │
-├── 📓 notebooks/
+├── notebooks/
 │   ├── dataset_prepare.ipynb       # Data preprocessing pipeline
 │   └── llama3-ft-colab.ipynb       # Colab notebook link
 │
-├── 🐍 src/scripts/
+├── src/scripts/
 │   ├── train.py                    # Local training script
 │   └── evaluate.py                 # Model evaluation script
 │
-├── 🖼️ assets/
+├── assets/
 │   └── wb_training_analysis.png    # W&B training metrics
 │
 ├── requirements.txt                # Main dependencies
@@ -300,7 +300,7 @@ llama3-financial-sentiment-analysis-ft-unsloth/
 
 ---
 
-## 💡 Inference Example
+## Inference Example
 
 ```python
 from unsloth import FastLanguageModel
@@ -331,7 +331,7 @@ print(predict_sentiment("Markets traded sideways today"))         # → Neutral
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -344,7 +344,7 @@ print(predict_sentiment("Markets traded sideways today"))         # → Neutral
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 This project establishes a strong baseline. Here's how it could evolve:
 
@@ -356,7 +356,7 @@ This project establishes a strong baseline. Here's how it could evolve:
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License. The base Llama 3.2 model is subject to Meta's [Llama 3.2 Community License](https://llama.meta.com/llama3/license/).
 
