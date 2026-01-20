@@ -182,6 +182,3 @@ llm-finetuning-lab/
 ├── 📂 [future-project-2]/        # Coming soon
 │
 └── README.md                     # This file (lab overview)
-
-
-
