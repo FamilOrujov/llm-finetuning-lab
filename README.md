@@ -182,43 +182,6 @@ llm-finetuning-lab/
 ├── 📂 [future-project-2]/        # Coming soon
 │
 └── README.md                     # This file (lab overview)
-```
-
----
-
-## Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Add a New Project**: Fork, create your fine-tuning experiment, submit a PR
-2. **Improve Documentation**: Fix typos, clarify explanations, add examples
-3. **Report Issues**: Found a bug? Open an issue with reproduction steps
-4. **Share Results**: Trained a model? Share your metrics and insights
-
-### Contribution Guidelines
-
-- Each project should be self-contained in its own folder
-- Include a detailed README with training parameters and results
-- Provide reproducible notebooks (preferably Colab-compatible)
-- Document your hyperparameter choices and reasoning
-
----
-
-## Roadmap
-
-- [x] Llama 3.2 Financial Sentiment Analysis
-- [ ] Code generation fine-tuning (StarCoder/CodeLlama)
-- [ ] Multi-turn conversation fine-tuning
-- [ ] Instruction following (Alpaca-style)
-- [ ] Domain adaptation for legal/medical text
-- [ ] Model merging experiments (DARE, TIES)
-- [ ] Deployment guides (vLLM, Ollama)
-
----
-
-## License
-
-This repository is licensed under the MIT License. Individual projects may use models with their own licenses (e.g., Llama Community License).
 
 
 
