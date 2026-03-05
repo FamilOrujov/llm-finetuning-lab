@@ -16,7 +16,7 @@
 
 ---
 
-## What Is This Repository
+## What Is This Repository.
 
 This repository is a **living laboratory** for LLM fine-tuning experiments. Each folder contains a complete, self-contained project that fine-tunes a large language model for a specific task, from sentiment analysis to code generation, from summarization to domain-specific assistants.
 
