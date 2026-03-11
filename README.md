@@ -1,6 +1,6 @@
 <div align="center">
 
-#  LLM Fine-Tuning Lab
+#  LLM Fine-Tuning Lab.
 
 ### A Collection of Large Language Model Fine-Tuning Experiments
 
